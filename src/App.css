@@ -1,0 +1,246 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  background-color: #e0efff !important;
+  font-family: "Poppins", serif !important;
+}
+
+.container{
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+.full-container {
+  width: 100%;
+}
+
+.main-containt {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.input-containt {
+  margin-top: 5px;
+}
+
+.date-filter {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.input-bar{
+  padding: 12px;
+  width: 60%;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+  font-size: 15px;
+  font-family: "Poppins", serif !important;
+  outline: none;
+
+}
+
+
+
+.app-head h1 {
+  
+  font-size: 25px;
+}
+
+.date-range h2{
+  color: #acb6c0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.date-range input {
+  
+  border: none;
+    width: 15%;
+    padding: 3px 10px;
+    font-size: 16px;
+    font-family: 'Poppins';
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+.main-pop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.population {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 33.3%;
+}
+.numbers {
+  background: white;
+  border-radius: 3px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+  width: 45%;
+}
+.numbers p {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 14px;
+  text-align: center;
+}
+
+.cases p {
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cases {
+  background: #9ca8ff;
+  width: 55%;
+}
+
+.deaths p {
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.deaths {
+  background: #ff4d57;
+  width: 55%;
+}
+
+.recovered p {
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.recovered {
+  background: #47d928;
+  width: 55%;
+}
+
+.charts {
+  display: flex;
+  align-items: start;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.pie-chart {
+  width: 50%;
+  display: flex;
+  justify-content:center ;
+}
+
+.pie-chart div {
+  width: 50%;
+}
+.line-chart {
+  width: 50%;
+}
+
+
+@media only screen and ( max-width : 768px ) {
+  .input-bar {
+    width: 100%;
+  }
+
+  .date-range input {
+    width: 30%;
+  }
+   
+  .main-pop{
+    flex-wrap: wrap;
+    gap: 4%;
+    margin: 0;
+  }
+  .population {
+    width: 48%;
+    margin-top: 20px;
+  }
+
+  .cases p {
+    font-size: 18px;
+  }
+
+  .deaths p {
+    font-size: 18px;
+  }
+
+  .recovered p {
+    font-size: 18px;
+  }
+
+  .numbers p {
+    font-size: 18px;
+  }
+
+  .charts {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .pie-chart{
+    width: 100%;
+    justify-content: start;
+  }
+  .line-chart {
+    width: 100%;
+  }
+
+  .pie-chart div {
+
+    width: 70%;
+  }
+}
+
+@media only screen and ( max-width : 480px ){
+  .date-range input {
+    width: 50%;
+  }
+
+  .main-pop{
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .population {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .app-head h1 {
+  
+    font-size: 18px;
+  }
+
+  .pie-chart div {
+     width: 90%;
+  }
+
+  .line-chart div canvas {
+    min-height: 300px !important;
+  }
+  
+}
